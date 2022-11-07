@@ -1,20 +1,9 @@
-import { useState, useEffect } from 'react'
-import './App.css';
+import React from 'react'
 
-const App = () =>  {
-  const [counter, setCounter] = useState(0)
-
-  useEffect(() => {
-    setCounter(100)
-  }, [])
-
+const App = () => {
   return (
-    <div className="App">
-      <button onClick={() => setCounter((preCount) => preCount - 1)}>-</button>
-      <button>{counter}</button>
-      <button onClick={() => setCounter((preCount) => preCount + 1)}>+</button>
-    </div>
-  );
+    <h1>App</h1>
+  )
 }
 
-export default App;
+export default App
